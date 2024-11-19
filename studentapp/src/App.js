@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import{ students } from './data/StudentsDB';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <tbody>
           <tr>
             <td>
-              
+              <StudentTable students={students}/>
             </td>
           </tr>
         </tbody>
