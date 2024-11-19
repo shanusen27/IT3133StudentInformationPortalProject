@@ -1,5 +1,7 @@
 import '../assests/css/compo.css';
 import {useState} from 'react';
+import Profile from './Profile';
+
 export default function StudentTable(prosps){
     const [stu, setStu]= useState(prosps.students[0]);
     return(

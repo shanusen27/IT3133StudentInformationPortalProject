@@ -1,5 +1,5 @@
 import './App.css';
-import{ students } from './data/StudentsDB';
+import{ students } from './data/StudentsDb';
 import StudentTable from './components/StudentTable';
 
 function App() {
