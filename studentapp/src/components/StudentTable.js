@@ -13,6 +13,20 @@ export default function StudentTable(prosps){
                             <td>Country</td>
                         </tr>
                     </thead>
+                    <tbody>
+                        {
+                            prosps.students.map( student=>
+                                <tr>
+                                    <td>{student.firstname}</td>
+                                    <td>{student.lastname}</td>
+                                    <td>{student.course}</td>
+                                    <td>{student.address.country}</td>
+
+                                </tr>
+
+                            )
+                        }
+                    </tbody>
                 </table>
             </div>
         </div>
