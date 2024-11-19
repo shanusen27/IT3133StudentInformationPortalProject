@@ -1,7 +1,8 @@
+import '..assests/css/'
 export default functionStudentTable(prosps){
 
     return(
-        <div>
+        <div className="">
 
         </div>
     );
