@@ -1,7 +1,7 @@
 import '../assests/css/compo.css';
-import {useSate} from 'react';
+import {useState} from 'react';
 export default function StudentTable(prosps){
-    const [stu, setStu]= useSate(prosps.students[0]);
+    const [stu, setStu]= useState(prosps.students[0]);
     return(
         <div className="outerDiv">
             <div className="leftDiv">
