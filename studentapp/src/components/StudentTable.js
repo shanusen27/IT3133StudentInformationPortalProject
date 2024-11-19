@@ -23,7 +23,7 @@ export default function StudentTable(prosps){
                                     <td>{student.lastName}</td>
                                     <td>{student.course}</td>
                                     <td>{student.address.country}</td>
-                                    <td><button onClick={()=>setStu(student)}>View</button></td>
+                                    <td><button id={student.studentID} onClick={()=>setStu(student)}>View</button></td>
                                 </tr>
 
                             )
@@ -31,8 +31,8 @@ export default function StudentTable(prosps){
                     </tbody>
                 </table>
             </div>
-            <div>
-                
+            <div className='rightDiv'>
+                <Profile stu={stu}/>
             </div>
         </div>
     );
